@@ -1,0 +1,190 @@
+
+
+
+
+3.8.5 Documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @media only screen {
+        table.full-width-table {
+            width: 100%;
+        }
+      }
+    
+
+
+
+
+Navigation
+
+
+[34mindex[0m
+
+[34mmodules[0m |
+
+[34mPython[0m »
+
+[34m3.8.5 Documentation[0m »
+    
+
+
+
+
+
+
+
+
+
+$('.inline-search').show(0);
+         |
+    
+
+
+
+
+
+
+Python 3.8.5 documentation
+
+  Welcome! This is the documentation for Python 3.8.5.
+  
+Parts of the documentation:
+
+
+[34mWhat's new in Python 3.8?[0m
+ or [34mall "What's new" documents[0m since 2.0
+[34mTutorial[0m
+start here
+[34mLibrary Reference[0m
+keep this under your pillow
+[34mLanguage Reference[0m
+describes syntax and language elements
+[34mPython Setup and Usage[0m
+how to use Python on different platforms
+[34mPython HOWTOs[0m
+in-depth documents on specific topics
+
+[34mInstalling Python Modules[0m
+installing from the Python Package Index & other sources
+[34mDistributing Python Modules[0m
+publishing modules for installation by others
+[34mExtending and Embedding[0m
+tutorial for C/C++ programmers
+[34mPython/C API[0m
+reference for C/C++ programmers
+[34mFAQs[0m
+frequently asked questions (with answers!)
+
+
+Indices and tables:
+
+
+[34mGlobal Module Index[0m
+quick access to all modules
+[34mGeneral Index[0m
+all functions, classes, terms
+[34mGlossary[0m
+the most important terms explained
+
+[34mSearch page[0m
+search this documentation
+[34mComplete Table of Contents[0m
+lists all sections and subsections
+
+
+Meta information:
+
+
+[34mReporting bugs[0m
+[34mContributing to Docs[0m
+[34mAbout the documentation[0m
+
+[34mHistory and License of Python[0m
+[34mCopyright[0m
+
+
+
+
+
+
+Download
+[34mDownload these documents[0m
+Docs by version
+
+[34mPython 3.10 (in development)[0m
+[34mPython 3.9 (pre-release)[0m
+[34mPython 3.8 (stable)[0m
+[34mPython 3.7 (security-fixes)[0m
+[34mPython 3.6 (security-fixes)[0m
+[34mPython 3.5 (security-fixes)[0m
+[34mPython 2.7 (EOL)[0m
+[34mAll versions[0m
+
+Other resources
+
+[34mPEP Index[0m
+[34mBeginner's Guide[0m
+[34mBook List[0m
+[34mAudio/Visual Talks[0m
+[34mPython Developer’s Guide[0m
+
+
+
+
+
+
+Navigation
+
+
+[34mindex[0m
+
+[34mmodules[0m |
+
+[34mPython[0m »
+
+[34m3.8.5 Documentation[0m »
+    
+
+
+
+
+
+
+
+
+
+$('.inline-search').show(0);
+         |
+    
+
+
+
+    © [34mCopyright[0m 2001-2020, Python Software Foundation.
+    
+
+    The Python Software Foundation is a non-profit corporation.
+[34mPlease donate.[0m
+
+
+
+    Last updated on Aug 27, 2020.
+    [34mFound a bug[0m?
+    
+
+    Created using [34mSphinx[0m 2.3.1.
+    
+
+

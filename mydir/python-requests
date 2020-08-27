@@ -1,0 +1,425 @@
+
+
+
+
+
+
+Requests: HTTP for Humans™ — Requests 2.24.0 documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+READTHEDOCS_DATA['page'] = "index"
+READTHEDOCS_DATA['source_suffix'] = ".rst"
+
+
+
+
+
+
+
+
+
+Requests: HTTP for Humans™[34m¶[0m
+Release v2.24.0. ([34mInstallation[0m)
+
+
+
+
+Requests is an elegant and simple HTTP library for Python, built for human beings.
+
+Behold, the power of Requests:
+>>> r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+>>> r.encoding
+'utf-8'
+>>> r.text
+'{"type":"User"...'
+>>> r.json()
+{'private_gists': 419, 'total_private_repos': 77, ...}
+
+
+See [34msimilar code, sans Requests[0m.
+Requests allows you to send HTTP/1.1 requests extremely easily.
+There’s no need to manually add query strings to your
+URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling
+are 100% automatic, thanks to [34murllib3[0m.
+
+Beloved Features[34m¶[0m
+Requests is ready for today’s web.
+
+Keep-Alive & Connection Pooling
+International Domains and URLs
+Sessions with Cookie Persistence
+Browser-style SSL Verification
+Automatic Content Decoding
+Basic/Digest Authentication
+Elegant Key/Value Cookies
+Automatic Decompression
+Unicode Response Bodies
+HTTP(S) Proxy Support
+Multipart File Uploads
+Streaming Downloads
+Connection Timeouts
+Chunked Requests
+.netrc Support
+
+Requests officially supports Python 2.7 & 3.5+, and runs great on PyPy.
+
+
+The User Guide[34m¶[0m
+This part of the documentation, which is mostly prose, begins with some
+background information about Requests, then focuses on step-by-step
+instructions for getting the most out of Requests.
+
+
+[34mInstallation of Requests[0m
+[34m$ python -m pip install requests[0m
+[34mGet the Source Code[0m
+
+
+[34mQuickstart[0m
+[34mMake a Request[0m
+[34mPassing Parameters In URLs[0m
+[34mResponse Content[0m
+[34mBinary Response Content[0m
+[34mJSON Response Content[0m
+[34mRaw Response Content[0m
+[34mCustom Headers[0m
+[34mMore complicated POST requests[0m
+[34mPOST a Multipart-Encoded File[0m
+[34mResponse Status Codes[0m
+[34mResponse Headers[0m
+[34mCookies[0m
+[34mRedirection and History[0m
+[34mTimeouts[0m
+[34mErrors and Exceptions[0m
+
+
+[34mAdvanced Usage[0m
+[34mSession Objects[0m
+[34mRequest and Response Objects[0m
+[34mPrepared Requests[0m
+[34mSSL Cert Verification[0m
+[34mClient Side Certificates[0m
+[34mCA Certificates[0m
+[34mBody Content Workflow[0m
+[34mKeep-Alive[0m
+[34mStreaming Uploads[0m
+[34mChunk-Encoded Requests[0m
+[34mPOST Multiple Multipart-Encoded Files[0m
+[34mEvent Hooks[0m
+[34mCustom Authentication[0m
+[34mStreaming Requests[0m
+[34mProxies[0m
+[34mCompliance[0m
+[34mHTTP Verbs[0m
+[34mCustom Verbs[0m
+[34mLink Headers[0m
+[34mTransport Adapters[0m
+[34mBlocking Or Non-Blocking?[0m
+[34mHeader Ordering[0m
+[34mTimeouts[0m
+
+
+[34mAuthentication[0m
+[34mBasic Authentication[0m
+[34mDigest Authentication[0m
+[34mOAuth 1 Authentication[0m
+[34mOAuth 2 and OpenID Connect Authentication[0m
+[34mOther Authentication[0m
+[34mNew Forms of Authentication[0m
+
+
+
+
+
+
+The Community Guide[34m¶[0m
+This part of the documentation, which is mostly prose, details the
+Requests ecosystem and community.
+
+
+[34mRecommended Packages and Extensions[0m
+[34mCertifi CA Bundle[0m
+[34mCacheControl[0m
+[34mRequests-Toolbelt[0m
+[34mRequests-Threads[0m
+[34mRequests-OAuthlib[0m
+[34mBetamax[0m
+
+
+[34mFrequently Asked Questions[0m
+[34mEncoded Data?[0m
+[34mCustom User-Agents?[0m
+[34mWhy not Httplib2?[0m
+[34mPython 3 Support?[0m
+[34mPython 2 Support?[0m
+[34mWhat are “hostname doesn’t match” errors?[0m
+
+
+[34mIntegrations[0m
+[34mPython for iOS[0m
+
+
+[34mArticles & Talks[0m
+[34mSupport[0m
+[34mStack Overflow[0m
+[34mFile an Issue[0m
+[34mSend a Tweet[0m
+
+
+[34mVulnerability Disclosure[0m
+[34mProcess[0m
+[34mPrevious CVEs[0m
+
+
+[34mRelease Process and Rules[0m
+[34mMajor Releases[0m
+[34mMinor Releases[0m
+[34mHotfix Releases[0m
+[34mReasoning[0m
+
+
+
+
+
+
+[34mCommunity Updates[0m
+[34mRelease History[0m
+
+
+
+
+The API Documentation / Guide[34m¶[0m
+If you are looking for information on a specific function, class, or method,
+this part of the documentation is for you.
+
+
+[34mDeveloper Interface[0m
+[34mMain Interface[0m
+[34mExceptions[0m
+[34mRequest Sessions[0m
+[34mLower-Level Classes[0m
+[34mLower-Lower-Level Classes[0m
+[34mAuthentication[0m
+[34mEncodings[0m
+[34mCookies[0m
+[34mStatus Code Lookup[0m
+[34mMigrating to 1.x[0m
+[34mMigrating to 2.x[0m
+
+
+
+
+
+
+The Contributor Guide[34m¶[0m
+If you want to contribute to the project, this part of the documentation is for
+you.
+
+
+[34mContributor’s Guide[0m
+[34mBe Cordial[0m
+[34mGet Early Feedback[0m
+[34mContribution Suitability[0m
+[34mCode Contributions[0m
+[34mSteps for Submitting Code[0m
+[34mCode Review[0m
+[34mNew Contributors[0m
+[34mKenneth Reitz’s Code Style™[0m
+
+
+[34mDocumentation Contributions[0m
+[34mBug Reports[0m
+[34mFeature Requests[0m
+
+
+[34mAuthors[0m
+[34mKeepers of the Crystals[0m
+[34mPrevious Keepers of Crystals[0m
+[34mPatches and Suggestions[0m
+
+
+
+
+There are no more guides. You are now guideless.
+Good luck.
+
+
+
+
+
+
+
+
+
+
+
+  .algolia-autocomplete {
+    width: 100%;
+    height: 1.5em
+  }
+
+  .algolia-autocomplete a {
+    border-bottom: none !important;
+  }
+
+  #doc_search {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+  Requests is an elegant and simple HTTP library for Python, built for
+  human beings.
+
+Sponsored by [34mCERT Gouvernemental - GOVCERT.LU[0m.
+
+Useful Links
+
+[34mQuickstart[0m
+[34mAdvanced Usage[0m
+[34mAPI Reference[0m
+[34mRelease History[0m
+[34mContributors Guide[0m
+
+[34mRecommended Packages and Extensions[0m
+
+[34mRequests @ GitHub[0m
+[34mRequests @ PyPI[0m
+[34mIssue Tracker[0m
+
+Translations
+
+[34mEnglish[0m
+[34mFrench[0m
+[34mGerman[0m
+[34mJapanese[0m
+[34mChinese[0m
+[34mPortuguese[0m
+[34mItalian[0m
+[34mSpanish[0m
+
+
+
+
+Quick search
+
+
+
+
+
+
+
+
+
+$('#searchbox').show(0);
+
+
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+
+
+
+
+
+_bsa.init('custom', 'CK7D62JU', 'placement:pythonrequestsorg',
+    {
+      target: '#native-ribbon',
+      template: `
+<div class="native-sponsor">Sponsored by ##company## — Learn More</div>
+  <a href="##link##" class="native-flex">
+    <style>
+    #native-ribbon #_custom_ {
+      background: linear-gradient(-30deg, ##backgroundColor##E5, ##backgroundColor##E5 45%, ##backgroundColor## 45%) #fff;
+    }
+
+    .native-details,
+    .native-sponsor,
+    .native-bsa {
+      color: ##textColor## !important;
+    }
+
+    .native-details:hover {
+      color: ##textColorHover## !important;
+    }
+
+    .native-cta {
+      color: ##ctaTextColor##;
+      background-color: ##ctaBackgroundColor##;
+    }
+
+    .native-cta:hover {
+      color: ##ctaTextColorHover##;
+      background-color: ##ctaBackgroundColorHover##;
+    }
+    </style>
+    <div class="native-main">
+      <img class="native-img" src="##logo##">
+      <div class="native-details">
+        <span class="native-company">##title##</span>
+        <span class="native-desc">##description##</span>
+      </div>
+    </div>
+    <span class="native-cta">##callToAction##</span>
+  </a>
+</div>
+`
+    }
+  );
+
+
+
+
+
+
+      ©MMXVIX. A [34mKenneth Reitz[0m Project.
+      
+    
+
+
+
+
